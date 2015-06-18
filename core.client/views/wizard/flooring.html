@@ -1,0 +1,18 @@
+<div ng-controller="MainWizardCtrl">
+
+  <h1>Voulez vous changer le revetement de vos sols ou installer du chauffage par le sol?</h1>
+
+  <form>
+    <div class="form-group">
+      <label for="wizard-path">
+        Je veux:
+      </label>
+      <select class="form-control" ng-model="showSection" id="wizard-path" ng-required='true' ng-change="nextOrShow('sols_interieurs')" ng-options="o.v as o.n for o in [{ n: 'Oui', v: true }, { n: 'Non', v: false }]">
+      </select>
+    </div>
+  </form>
+
+  <div ng-show="showSection">
+    I'm showing the form now!
+  </div>
+</div>

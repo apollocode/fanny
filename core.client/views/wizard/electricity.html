@@ -1,0 +1,18 @@
+<div ng-controller="MainWizardCtrl">
+
+  <h1>Souhaite vous réaliser des travaux portant sur votre installation electrique?</h1>
+
+  <form>
+    <div class="form-group">
+      <label for="wizard-path">
+        Je veux:
+      </label>
+      <select class="form-control" ng-model="showSection" id="wizard-path" ng-required='true' ng-change="nextOrShow('portes')" ng-options="o.v as o.n for o in [{ n: 'Oui', v: true }, { n: 'Non', v: false }]">
+      </select>
+    </div>
+  </form>
+
+  <div ng-show="showSection">
+    I'm showing the form now!
+  </div>
+</div>

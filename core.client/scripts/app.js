@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  angular.module('habitac', ['ngRoute', 'angular-loading-bar', 'ngAnimate','ngResource', 'LocalStorageModule', 'ui.bootstrap'])
+  angular.module('habitac', ['ngRoute', 'angular-loading-bar', 'ngAnimate','ngResource', 'LocalStorageModule', 'ui.bootstrap']);
 
 
   angular.module('habitac').run(['$http','sessionService', 'userService', set_header]);

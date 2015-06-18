@@ -1,0 +1,26 @@
+<div ng-controller="WizardInitCtrl">
+  <h1>this is the landing page</h1>
+  <h3>(Si si je vous jure)</h3>
+  <br>
+
+
+    <form>
+      <div class="form-group">
+        <label for="wizard-path">
+          Je veux:
+        </label>
+        <select class="form-control" ng-model="path" id="wizard-path" ng-required='true' ng-change="choose_path()">
+          <option value="a">Faire des travaux dans ma maison (tout type de travaux)</option>
+          <option value="b">Faire des travaux dans mon appartement (tout type de travaux)</option>
+          <option value="c">Refaire une piece de mon logement</option>
+          <option value="d">Refaire ou isoler ma toiture</option>
+          <option value="e">Changer ou modifier les portes et fenêtres</option>
+          <option value="f">Changer ou refaire l'installation électrique</option>
+          <option value="g">Refaire les murs ou plafonds</option>
+          <option value="h">Réparer ou changer mon système de chauffage</option>
+          <option value="i">Refaire des revetements de sol (intérieur ou extérieur)</option>
+        </select>
+      </div>
+    </form>
+  </div>
+</div>
