@@ -1,8 +1,8 @@
 <div ng-controller="MainWizardCtrl">
 
-  <h1>Voulez vous changer le revetement de vos sols ou installer du chauffage par le sol?</h1>
+  <h1>{{sectionHeadline}}</h1>
 
-  <form>
+  <form ng-hide="mandatorySection">
     <div class="form-group">
       <label for="wizard-path">
         Je veux:

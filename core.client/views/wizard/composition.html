@@ -1,20 +1,9 @@
-
-
 <div ng-controller="MainWizardCtrl">
 
-  <h1>Quelle est la composition de votre logement / quelle sera la composition de votre logement apres la modification des cloisons?</h1>
-
-  <form>
-    <div class="form-group">
-      <label for="wizard-path">
-        Je veux:
-      </label>
-      <select class="form-control" ng-model="showSection" id="wizard-path" ng-required='true' ng-change="nextOrShow('composition_logement')" ng-options="o.v as o.n for o in [{ n: 'Oui', v: true }, { n: 'Non', v: false }]">
-      </select>
-    </div>
-  </form>
+  <h1>{{sectionHeadline}}</h1>
 
   <div ng-show="showSection">
     I'm showing the form now!
+    <a href="#" ng-href="{{steps[steps.indexOf(currentStep) + 1]}}">Next</a>
   </div>
 </div>

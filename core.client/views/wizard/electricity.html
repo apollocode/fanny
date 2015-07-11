@@ -1,8 +1,8 @@
 <div ng-controller="MainWizardCtrl">
 
-  <h1>Souhaite vous réaliser des travaux portant sur votre installation electrique?</h1>
+  <h1>{{sectionHeadline}}</h1>
 
-  <form>
+  <form ng-hide="mandatorySection">
     <div class="form-group">
       <label for="wizard-path">
         Je veux:
